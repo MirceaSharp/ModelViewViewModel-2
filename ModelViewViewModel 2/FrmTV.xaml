@@ -1,0 +1,68 @@
+﻿<Window x:Class="MVVM_voorbeeld_Oplossing.FrmTV"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVM_voorbeeld_Oplossing"
+        mc:Ignorable="d"
+        Title="FrmTV" Height="400" Width="600" >
+    <Window.Resources>
+        <Style TargetType="TextBox">
+
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <DockPanel LastChildFill="true">
+                            <Border Background="Red" DockPanel.Dock="right" Margin="5,0,0,0" Width="20" Height="20" CornerRadius="10"
+                                    ToolTip="{Binding ElementName=customAdorner, Path=AdornedElement.(Validation.Errors)[0].ErrorContent}">
+                                <TextBlock Text="!" VerticalAlignment="center" HorizontalAlignment="center" FontWeight="Bold" Foreground="white">
+                                </TextBlock>
+                            </Border>
+                            <AdornedElementPlaceholder Name="customAdorner" VerticalAlignment="Center" >
+                                <Border BorderBrush="red" BorderThickness="1" />
+                            </AdornedElementPlaceholder>
+                        </DockPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="198*"></ColumnDefinition>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="86*"/>
+            <ColumnDefinition Width="174*"></ColumnDefinition>
+            <ColumnDefinition Width="123*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="TV" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Name="rbSony" IsChecked="{Binding Path=Sony}"    Command="{Binding ToonCommand}" Content="Sony" GroupName="tvType"  Margin="10" />
+                <RadioButton Name="rbSamsung" IsChecked="{Binding Path=Samsung}" Command="{Binding ToonCommand}" Content="Samsung"  GroupName="tvType" Margin="10" />
+            </StackPanel>
+        </GroupBox>
+        <Label Name="lblEigenschappen" Grid.Row="0" Grid.Column="3" Content="{Binding Path=LblEigenschappen, Mode=OneWay}" Grid.ColumnSpan="2"></Label>
+        <Image Name="img" Source="{Binding Path=Afbeelding, Mode=OneWay}" Grid.Row="1" Grid.Column="0"  Margin="10" Grid.ColumnSpan="3"></Image>
+        <Grid Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" Margin="10,11" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <CheckBox Name="cbPower"  IsChecked="{Binding Path=Power, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True }" Content="Power" Grid.Row="0" Grid.ColumnSpan="2" />
+            <Label Name="lblKanaal" Content="Kanaal" Grid.Row="1" Grid.Column="0"/>
+            <TextBox Name="txtKanaal" Text="{Binding Path=TxtKanaal, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True }" Grid.Row="1" Grid.Column="1" Width="100" />
+            <Label Name="lblVolume" Content="Volume" Grid.Row="2" Grid.Column="0"/>
+            <TextBox Name="txtVolume"  Text="{Binding Path=TxtVolume, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Grid.Row="2" Grid.Column="1" Width="100" />
+        </Grid>
+    </Grid>
+</Window>

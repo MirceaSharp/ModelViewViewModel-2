@@ -1,0 +1,15 @@
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\bin\Debug\MVVM voorbeeld Oplossing.exe.config
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\bin\Debug\MVVM voorbeeld Oplossing.exe
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\bin\Debug\MVVM voorbeeld Oplossing.pdb
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\FrmTV.g.cs
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\App.g.cs
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\MVVM voorbeeld Oplossing_MarkupCompile.cache
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\MVVM voorbeeld Oplossing_MarkupCompile.lref
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\FrmTV.baml
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\MVVM voorbeeld Oplossing.g.resources
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\MVVM_voorbeeld_Oplossing.Properties.Resources.resources
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\MVVM voorbeeld Oplossing.csproj.GenerateResource.cache
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\MVVM voorbeeld Oplossing.csproj.CoreCompileInputs.cache
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\MVVM voorbeeld Oplossing.exe
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\MVVM voorbeeld Oplossing.pdb
+C:\Users\hans\source\repos\MVVM voorbeeld Oplossing\MVVM voorbeeld Oplossing\obj\Debug\MVVM voorbeeld Oplossing.csprojAssemblyReference.cache
